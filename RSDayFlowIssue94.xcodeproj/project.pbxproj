@@ -15,6 +15,23 @@
 		19E70DEF1C7EF98C00FD0B85 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 19E70DED1C7EF98C00FD0B85 /* LaunchScreen.storyboard */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		19E70E641C7F07B100FD0B85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19E70E601C7F07B100FD0B85 /* RSDayFlow.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A5BE393D1B32B49D00ECDF88;
+			remoteInfo = RSDayFlow;
+		};
+		19E70E661C7F07C600FD0B85 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 19E70E601C7F07B100FD0B85 /* RSDayFlow.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A5BE393C1B32B49D00ECDF88;
+			remoteInfo = RSDayFlow;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		19E70DDC1C7EF98C00FD0B85 /* RSDayFlowIssue94.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RSDayFlowIssue94.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		19E70DE01C7EF98C00FD0B85 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -26,6 +43,7 @@
 		19E70DEB1C7EF98C00FD0B85 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		19E70DEE1C7EF98C00FD0B85 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		19E70DF01C7EF98C00FD0B85 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		19E70E601C7F07B100FD0B85 /* RSDayFlow.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RSDayFlow.xcodeproj; path = RSDayFlow/RSDayFlow.xcodeproj; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +60,7 @@
 		19E70DD31C7EF98C00FD0B85 = {
 			isa = PBXGroup;
 			children = (
+				19E70E601C7F07B100FD0B85 /* RSDayFlow.xcodeproj */,
 				19E70DDE1C7EF98C00FD0B85 /* RSDayFlowIssue94 */,
 				19E70DDD1C7EF98C00FD0B85 /* Products */,
 			);
@@ -79,6 +98,14 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
+		19E70E611C7F07B100FD0B85 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				19E70E651C7F07B100FD0B85 /* RSDayFlow.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -93,6 +120,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				19E70E671C7F07C600FD0B85 /* PBXTargetDependency */,
 			);
 			name = RSDayFlowIssue94;
 			productName = RSDayFlowIssue94;
@@ -124,12 +152,28 @@
 			mainGroup = 19E70DD31C7EF98C00FD0B85;
 			productRefGroup = 19E70DDD1C7EF98C00FD0B85 /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = 19E70E611C7F07B100FD0B85 /* Products */;
+					ProjectRef = 19E70E601C7F07B100FD0B85 /* RSDayFlow.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				19E70DDB1C7EF98C00FD0B85 /* RSDayFlowIssue94 */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		19E70E651C7F07B100FD0B85 /* RSDayFlow.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = RSDayFlow.framework;
+			remoteRef = 19E70E641C7F07B100FD0B85 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		19E70DDA1C7EF98C00FD0B85 /* Resources */ = {
@@ -156,6 +200,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		19E70E671C7F07C600FD0B85 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = RSDayFlow;
+			targetProxy = 19E70E661C7F07C600FD0B85 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		19E70DE81C7EF98C00FD0B85 /* Main.storyboard */ = {
@@ -265,6 +317,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.RSDayFlowIssue94;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Debug;
 		};
@@ -276,6 +329,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = test.RSDayFlowIssue94;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				USER_HEADER_SEARCH_PATHS = "";
 			};
 			name = Release;
 		};
@@ -298,6 +352,7 @@
 				19E70DF51C7EF98C00FD0B85 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
