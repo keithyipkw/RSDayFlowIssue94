@@ -1,0 +1,3 @@
+[submodule "RSDayFlow"]
+	path = RSDayFlow
+	url = https://github.com/ruslanskorb/RSDayFlow.git
